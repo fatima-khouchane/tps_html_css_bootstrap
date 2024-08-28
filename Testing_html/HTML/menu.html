@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <form action="" id="f1">
+        <fieldset class="f1">
+            <legend class="l1">Votre identite:</legend>
+            <ol type="1">
+                <li> <label for="nom"> Nom: </label> <input type="text" placeholder="Nom et Prenom" id="nm"></li>
+                <li> <label for="email"> Email: </label> <input type="email" placeholder="Entre votre email" id="em">
+                </li>
+                <li> <label for="telephone"> Telephone: </label> <input type="tel" placeholder="Numero de telephone"
+                        id="te">
+                </li>
+            </ol>
+        </fieldset>
+        <br>
+        <fieldset class="F2">
+            <legend class="l2">Informations CB : </legend>
+            <ol type="1">
+                <li>
+                    <fieldset class="F3">
+                        <legend>Type de carte bancaire</legend>
+                        <ol type="1">
+                            <li><input type="radio" name="visa" id="visa"> <label for="visa">Visa</label></li>
+                            <li><input type="radio" name="amex" id="amex"> <label for="amex">Amex</label></li>
+                            <li><input type="radio" name="mastercard" id="mastercard"> <label
+                                    for="mastercard">Mastercard</label></li>
+                        </ol>
+                    </fieldset><br>
+                </li>
+                <li>N° de carte <input type="text"></li>
+                <li>Code Securite <input type="text"></li>
+                <li>Nom du porteur <input type="text"></li>
+            </ol>
+        </fieldset>
+        <fieldset class="F4">
+            <input type="submit" value="J'achete!!">
+        </fieldset>
+    </form>
+</body>

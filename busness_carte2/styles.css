@@ -1,0 +1,16 @@
+body {
+    margin: 20px;
+}
+.main{
+    display: flex;
+    border: 6px dotted purple;
+    border-radius: 9px;
+    padding: 10px;
+    background: pink;
+}
+.imag{
+    width: 150px;
+}
+.all{
+    margin-left: 10px;
+}

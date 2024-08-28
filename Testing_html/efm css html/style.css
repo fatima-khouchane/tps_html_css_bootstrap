@@ -1,0 +1,62 @@
+body {
+    user-select: none;
+}
+
+img {
+    width: 100px;
+    height: 70px;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.para {
+    float: right;
+    font-weight: bold;
+}
+
+.btn-all {
+    margin-top: 20px;
+}
+
+.btn-all:hover {
+    cursor: pointer;
+}
+
+.btn1 {
+    width: 500px;
+    margin-left: 10px;
+}
+
+.part {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    margin-right: 5px;
+}
+
+.btn2 a {
+    color: black;
+
+    text-decoration: none;
+}
+
+.btn2 {
+    width: 200px;
+}
+
+ol li {
+    font-weight: bold;
+}

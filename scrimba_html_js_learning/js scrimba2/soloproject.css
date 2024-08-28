@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    border: 2px solid black;
+    border-radius: 15px;
+    background: rgb(14, 14, 80);
+
+
+}
+
+h1 {
+    color: aliceblue;
+}
+
+.ardoise {
+    border: 1px solid black;
+    width: 50%;
+    background-color: rgb(131, 36, 36);
+
+
+}

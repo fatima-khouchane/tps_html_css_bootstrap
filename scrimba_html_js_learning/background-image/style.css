@@ -1,0 +1,13 @@
+body{
+    background-image: url("giphy.gif");
+    background-size: cover;
+    color: pink;
+    font-family: 'Orbitron', sans-serif;
+    margin: 30px;
+    text-align: center;
+    color: #82a5ca;
+    font-weight: bold;
+}
+.logo{
+    width: 400px;
+}

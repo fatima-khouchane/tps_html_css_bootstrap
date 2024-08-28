@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: lightgray;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1,
+nav {
+    align-self: baseline;
+
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 7px;
+    padding: 6px;
+}

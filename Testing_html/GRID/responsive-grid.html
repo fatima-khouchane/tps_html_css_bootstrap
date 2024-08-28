@@ -1,0 +1,93 @@
+<html>
+<header>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "myheader    myheader"
+                "mysid       mynav"
+                "mysid       mycontent"
+
+                "myfooter   myfooter";
+            grid-template-rows: 1fr 3fr 6fr 3fr;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+        }
+
+        @media only screen and (max-width:550px) {
+            .container {
+
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas:
+                    "myheader"
+                    "mysid"
+                    "mynav"
+                    "mycontent"
+                    "myfooter";
+            }
+        }
+
+
+
+
+        .child {
+            border: 1px solid black;
+            background-color: aquamarine;
+        }
+
+        .child1 {
+            grid-area: myheader;
+        }
+
+        .child2 {
+            grid-area: mysid;
+        }
+
+        .child3 {
+            grid-area: mynav;
+        }
+
+        .child4 {
+            grid-area: mycontent;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 4px;
+
+        }
+*{
+    margin: 0;
+    padding: 0;
+}
+        P {
+            background-color: red;
+
+        }
+
+        .child5 {
+            grid-area: myfooter;
+            /* align-self: end; */
+            justify-self: end;
+        }
+    </style>
+
+</header>
+
+<body>
+    <DIV class="container " id="container">
+        <div class="child1 child">header</div>
+        <div class="child2 child">sid</div>
+        <div class="child3 child">nav</div>
+        <div class="child4 child ">
+            <P>nom</P>
+            <P>prenom</P>
+            <P>age</P>
+            <P>FATIMA</P>
+            <P>KHOUCHENE</P>
+            <P>18</P>
+        </div>
+        <footer class="child5 child">footer</footer>
+    </DIV>
+</body>
+
+</html>

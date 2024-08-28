@@ -1,0 +1,23 @@
+body {
+    background: rgb(74, 245, 245);
+}
+
+.f1 input {
+    margin: 10px 30px;
+}
+
+.f1 #nm {
+    margin: 20px 60px;
+}
+
+.f1 #em {
+    margin: 20px 60px;
+}
+
+.F2 input {
+    margin: 10px 30px;
+}
+
+.F3 input {
+    margin: 10px 30px;
+}

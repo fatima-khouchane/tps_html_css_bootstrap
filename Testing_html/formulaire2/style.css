@@ -1,0 +1,21 @@
+body {
+    display: flex;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(169, 138, 240);
+
+}
+
+* {
+    margin: 0px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif,
+}
+
+.containre {
+    display: flex;
+    background: linear-gradient(white, rgb(180, 108, 248))
+}

@@ -1,0 +1,20 @@
+.imag {
+    width: 150px;
+}
+
+.avatar{
+    width: 500px;
+    padding: 18px;
+    display: flex;
+    text-align: center;
+    background: #E9F5DB;
+    color: #2b2839;
+    border-bottom: 6px solid #469D89; 
+    font-family: verdana;
+}
+.para{
+    margin-left: 12px ;
+}
+.ad{
+    color: green;
+}

@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "img1 img2"
+                "footer footer";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 8fr 7fr 3fr;
+            gap: 2px;
+        }
+       .child{
+        background-color: rgb(196, 196, 255);
+       }
+        .child1 {
+            grid-area: header;
+
+        }
+
+        .child2 {
+            grid-area: img1;
+        }
+
+        .child3 {
+            grid-area: img2;
+        }
+
+        .child4 {
+            grid-area: footer;
+        }
+        .c{
+            background-color: lightblue;
+            width: 90px;
+            flex-grow: 1;
+        }
+        .container2{
+            margin-top: 9px;
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+        @media (max-width:480px){
+            .container{
+                display: grid;
+            grid-template-areas:
+                "header "
+                "img1 "
+                "img2"
+                "footer ";
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child child1">my header</div>
+        <div class="child child2">img1</div>
+        <div class="child child3">img2</div>
+        <div class="child child4">my footer</div>
+    </div>
+    <div class="container2">
+        <DIV class="c">
+            <h1>fatima</h1>
+            <p>prix</p>
+        </DIV>
+
+        <DIV class="c">
+            <h1>fatima</h1>
+            <p>prix</p>
+        </DIV>
+
+        <DIV class="c">
+            <h1>fatima</h1>
+            <p>prix</p>
+        </DIV>
+
+        <DIV class="c">
+            <h1>fatima</h1>
+            <p>prix</p>
+        </DIV>
+
+        <DIV class="c">
+            <h1>fatima</h1>
+            <p>prix</p>
+        </DIV>
+
+        <DIV class="c">
+            <h1>fatima</h1>
+            <p>prix</p>
+        </DIV>
+
+        <DIV class="c">
+            <h1>fatima</h1>
+            <p>prix</p>
+        </DIV>
+
+        <DIV class="c">
+            <h1>fatima</h1>
+            <p>prix</p>
+        </DIV>
+    </div>
+</body>
+
+</html>

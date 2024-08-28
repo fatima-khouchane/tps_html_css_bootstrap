@@ -1,0 +1,29 @@
+body{
+    background-image: url("history.jpg");
+    font-size: cover;
+    }
+    @font-face{
+        src:url("Corleone.ttf");
+        font-family: Corleone;
+    }
+    .god{
+        font-family: Corleone;
+        color: purple;
+        margin: 30px;
+        border: 4px solid purple;
+        border-radius: 7px;
+        padding-left: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    p{
+        margin: 9px;
+    }
+    .span{
+        color: red;
+        font-size: larger;
+    }
+    
+     

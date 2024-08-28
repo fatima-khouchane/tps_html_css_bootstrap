@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(221, 214, 214);
+            padding: 17px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "cart1 cart1 cart2 cart3"
+                "cart4 cart5 cart5  cart3";
+            gap: 7px;
+
+
+
+            height: 400px;
+            padding: 14px;
+            margin-right: 10px;
+        }
+
+        .cart1 {
+            grid-area: cart1;
+            background-color: rgb(71, 8, 112);
+            color: white;
+            line-height: 24px;
+            padding: 9px;
+            border-radius: 6px;
+
+
+        }
+
+        .cart11 {
+            display: flex;
+            gap: 13px;
+        }
+
+        .cart2 {
+            grid-area: cart2;
+            background-color: rgba(92, 89, 89, 0.952);
+            color: white;
+            padding: 8px;
+            border-radius: 6px;
+
+        }
+
+        .cart3 {
+            grid-area: cart3;
+            background-color: whitesmoke;
+            color: black;
+            padding: 8px;
+            border-radius: 6px;
+
+
+        }
+
+        .cart4 {
+            grid-area: cart4;
+            background-color: whitesmoke;
+            color: black;
+            padding: 8px;
+            border-radius: 6px;
+
+
+        }
+
+        .cart5 {
+            grid-area: cart5;
+            background-color: rgb(34, 34, 51);
+            color: whitesmoke;
+            padding: 8px;
+            border-radius: 6px;
+
+
+        }
+
+        img {
+            width: 50px;
+            ;
+            border-radius: 100%;
+            height: 50px;
+        }
+
+        @media only screen and (max-width:550px) {
+            .container {
+
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas:
+                    "cart1"
+                    "cart2"
+                    "cart3"
+                    "cart4"
+                    "cart5 ";
+
+
+            }
+        }
+        /*menu*/
+        body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+
+}
+
+#tab_nav {
+    display: none;
+}
+
+
+
+.nav_checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px 0px;
+
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+
+}
+
+.tab-nav {
+    outline: none;
+    display: none;
+
+}
+
+.label {
+    display: none;
+    color: white;
+
+}
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin-top: 5px;
+}
+
+.content_nav {
+    grid-column: 3;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.content_nav li {
+    display: inline-block;
+    padding-left: 60px;
+
+}
+
+.content_nav li a {
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+
+}
+
+.content_nav li a::after {
+    content: '';
+    display: block;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform-origin: right;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 0.5s;
+
+
+}
+
+.content_nav li a:hover::after {
+    transform: scale(1, 1);
+
+}
+
+.content_section {
+    height: 120vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .label {
+        display: grid;
+        cursor: pointer;
+        grid-column: 3;
+        padding-right: 10px;
+
+    }
+
+    .content_nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/4;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.6s;
+    }
+
+    .nav_checkbox input:checked~.content_nav {
+        max-height: 500px;
+
+
+    }
+
+    .content_nav li {
+        padding: 15px 0px;
+
+    }
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cart1">
+            <DIV class="cart11">
+                <img src="PER.png">
+                <div>
+                    <h4>per harald borgen</H4>
+                    <span>developpeur full stuck</span>
+                </div>
+            </DIV>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur.
+                </p><BR>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos deleniti fugiat cum. Quidem,
+                    atque. Vero, expedita at beatae odio esse, consequatur, doloremque voluptates qui inventore velit
+                    impedit maxime obcaecati.</P>
+            </div>
+        </div>
+        <div class="cart2">
+            <DIV class="cart11">
+                <img src="PER.png">
+                <div>
+                    <h4>per harald borgen</H4>
+                    <span>developpeur full stuck</span>
+                </div>
+            </DIV>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur.
+                </p><BR>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos deleniti fugiat cum. Quidem,
+                    atque. Vero, expedita at beatae odio esse, consequatur, doloremque voluptates qui inventore velit
+                    impedit maxime obcaecati.</P>
+            </div>
+
+        </div>
+        <div class="cart3">
+            <DIV class="cart11">
+                <img src="PER.png">
+                <div>
+                    <h4>per harald borgen</H4>
+                    <span>developpeur full stuck</span>
+                </div>
+            </DIV>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur.
+                </p><BR>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos deleniti fugiat cum. Quidem,
+                    atque. Vero, expedita at beatae odio esse, consequatur, doloremque voluptates qui inventore velit
+                    impedit maxime obcaecati.</P>
+            </div>
+
+        </div>
+        <div class="cart4">
+            <DIV class="cart11">
+                <img src="PER.png">
+                <div>
+                    <h4>per harald borgen</H4>
+                    <span>developpeur full stuck</span>
+                </div>
+            </DIV>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur.
+                </p><BR>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos deleniti fugiat cum. Quidem,
+                    atque. Vero, expedita at beatae odio esse, consequatur, doloremque voluptates qui inventore velit
+                    impedit maxime obcaecati.</P>
+            </div>
+
+        </div>
+        <div class="cart5">
+            <DIV class="cart11">
+                <img src="PER.png">
+                <div>
+                    <h4>per harald borgen</H4>
+                    <span>developpeur full stuck</span>
+                </div>
+            </DIV>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur.
+                </p><BR>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos deleniti fugiat cum. Quidem,
+                    atque. Vero, expedita at beatae odio esse, consequatur, doloremque voluptates qui inventore velit
+                    impedit maxime obcaecati.</P>
+                <h3>choise your favorate languge programming:</h3>
+                <input type="checkbox" name="languige" id="choise">
+                <label for="choise">java script</label><br>
+                <input type="checkbox" name="languige" id="choise2">
+                <label for="choise2">php</label><br>
+                <input type="checkbox" name="languige" id="choise3">
+                <label for="choise3">c++</label>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

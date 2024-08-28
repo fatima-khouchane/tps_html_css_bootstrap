@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="activité.css">
+</head>
+
+<body>
+
+
+    <fieldset>
+        <div class="container">
+            <div>
+                <h1 class="titre">INSCRIPTION</h1>
+                <hr>
+            </div>
+            <form>
+
+                <div>
+                    <label for="text">Nom</label><br>
+                    <input type="text" id="text" name="nom" required>
+                </div>
+                <div>
+                    <label for="prenom">Prenom</label><br>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+                <div>
+                    <label>Sexe:</label>
+                    <input name="sexe" type="radio"><label>Féminin</label>
+                    <input name="sexe" type="radio"><label>Masculin</label>
+                </div>
+                <div>
+                    <label>Date de naissance:</label><br>
+                    <input type="date" required><br><br>
+                    <label>Niveau d'étude</label><br>
+                    <select>
+                        <option>3éme année scolaire</option>
+                        <option>2éme année scolaire</option>
+                        <option>1ére année scolaire</option>
+                    </select><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="adress mail" required><br>
+                    <label>Site Web personnel</label><br>
+                    <input type="text"><br><br>
+                    <textarea>Adress</textarea><br>
+
+                    <label>Photo</label>
+                    <input type="file"><br>
+                    <input type="submit" value="Envoyez">
+
+                </div>
+
+            </form>
+        </div>
+    </fieldset>
+
+
+</body>
+
+</html>

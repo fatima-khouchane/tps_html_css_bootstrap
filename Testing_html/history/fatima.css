@@ -1,0 +1,8 @@
+body{
+    background-image: url("history.jpg");
+    background-size: cover;
+    color: brown;
+    text-shadow: 1px 1px 4px red;
+    text-align: center;
+    font-size: 80px;
+}
